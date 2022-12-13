@@ -1,0 +1,82 @@
+@import "../../styles/componentStyles/mixins";
+
+.dark{
+    color: rgb(253, 252, 252);
+    background:  #2B3844;
+    border: 1px solid #feffff;
+    border-bottom: 1px solid #f6f8f8;
+}
+
+.light{
+    color: #2B3844;
+    border: 1px solid #909191;
+    border-bottom: 1px solid #909191;
+
+}
+
+
+.InputArea{
+    @include flex(flex, none , space-between , none , none);
+    @include heights--margins(none, none, auto , auto , 40px , 0px);
+      
+    .searchIcon{
+        height: 17px;
+        width: 17px;
+        border-radius: 50%;
+        position: absolute;
+        top: 220px ;
+        left: 65px;
+        border-bottom: none;
+        transform: rotate(45deg);
+        .IconTail{
+            margin: 5px 0px 0px 15px;
+            width: 10px;
+        }
+      }  
+
+
+    input{
+        @include heights--margins(50px , 450px , none , none , 0px , 80px) ;
+        @include shadow();
+        border: none;
+        border-radius: 2px;
+        font-size: 14px; 
+    }
+
+    select{
+        border-radius: 2px;
+        padding: 0px 20px;
+        font-size: 14px;
+        @include shadow();
+        border: none;
+    }
+
+  
+}
+
+
+@include media(1024px){
+    .InputArea{
+        input{
+            @include heights--margins(48px , 45% , start , auto , 0px , 2% );
+    }
+}
+}
+
+
+@include media(800px){
+    .InputArea{
+        flex-direction: column;
+        gap: 30px;
+        input{
+            @include heights--margins(48px , 55% , start , auto , 0px , 3% );
+    }
+
+    select{
+        @include heights--margins(48px , 28% , auto , start , 0px , 3% );
+    }
+
+}
+}
+
+
