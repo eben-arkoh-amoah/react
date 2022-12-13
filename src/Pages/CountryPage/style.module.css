@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,600;0,800;1,400&display=swap");
+.light {
+  color: #111517;
+}
+
+.dark {
+  color: #ffffff;
+  box-shadow: 0px 0px 7px #111517;
+}
+
+.CountryPage {
+  height: 60vh;
+  width: 90%;
+  margin: auto auto;
+  padding: none 0px;
+}
+.CountryPage .back {
+  height: 40px;
+  width: 120px;
+  margin: 30px 0px;
+  padding: none none;
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  font-size: 20px;
+  font-family: "Nunito Sans", sans-serif;
+}
+.CountryPage .back .backText {
+  box-shadow: none;
+}
+.CountryPage .back .arrowHead {
+  font-weight: 600;
+  box-shadow: none;
+}
+.CountryPage .back .arrowTail {
+  font-weight: 600;
+  width: 24px;
+  margin-top: 2px;
+  border-bottom: 2px solid;
+  margin-left: -10px;
+  margin-right: 10px;
+}
+.CountryPage .loading {
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 500px) {
+  .CountryPage {
+    height: 60vh;
+    width: 95%;
+    margin: auto auto;
+    padding: 4px 10px;
+  }
+  #back--button {
+    height: 20px;
+    width: 57px;
+    margin: 20px 3px;
+    padding: none none;
+  }
+}/*# sourceMappingURL=style.module.css.map */

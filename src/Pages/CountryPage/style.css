@@ -1,0 +1,45 @@
+.CountryPage {
+  height: 60vh;
+  width: 93%;
+  margin: auto auto;
+  padding: none 0px;
+}
+.CountryPage #back--button {
+  height: 40px;
+  width: 120px;
+  margin: 30px 0px;
+  padding: none none;
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.2);
+  color: black;
+  font-size: 20px;
+}
+.CountryPage #back--button .arrow--tail {
+  width: 24px;
+  margin-top: 5px;
+  border-bottom: 2px solid;
+  margin-left: -10px;
+  margin-right: 10px;
+}
+.CountryPage .loading {
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 500px) {
+  .SingleCountry {
+    height: 60vh;
+    width: 100%;
+    margin: auto auto;
+    padding: 4px 10px;
+  }
+  #back--button {
+    height: 20px;
+    width: 57px;
+    margin: 20px 3px;
+    padding: none none;
+  }
+}/*# sourceMappingURL=style.css.map */

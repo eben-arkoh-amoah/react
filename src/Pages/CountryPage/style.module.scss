@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,600;0,800;1,400&display=swap');
+@import "../../styles/componentStyles/mixins";
+
+.light{
+    color:#111517;
+}
+
+.dark{
+    color: #ffffff;
+    box-shadow: 0px 0px 7px #111517;  
+}
+
+    .CountryPage{
+        @include heights--margins((calc(60vh)) , 90% , auto , auto , none , 0px ) ;
+        
+        .back {
+            @include heights--margins(40px , 120px , 30px , 0px , none, none);
+            @include flex(flex , none , center , center, none);
+            font-size: 20px;
+            font-family: 'Nunito Sans', sans-serif;
+            .backText{
+                box-shadow: none;
+            }
+            .arrowHead{
+                font-weight: 600;
+                box-shadow: none;
+            }
+            .arrowTail{
+                font-weight: 600;
+                width: 24px;
+                margin-top: 2px;
+                border-bottom: 2px solid ;
+                margin-left: -10px;
+                margin-right: 10px;
+            }
+
+        }
+
+        .loading{
+            min-height: 100vh;
+        }
+    }
+
+  
+
+   
+
+    
+@include media(500px){
+    .CountryPage{
+        @include heights--margins((calc(60vh)) , 95% , auto , auto , 4px , 10px ) ;
+   
+    }
+    #back--button{
+        @include heights--margins(20px ,57px , 20px , 3px , none , none);
+    }
+
+   
+    }
+
+    
+

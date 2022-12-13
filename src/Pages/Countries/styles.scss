@@ -1,0 +1,48 @@
+@import "../../styles/componentStyles/mixins";
+
+.main{
+    min-height: calc(100vh - 90px) ;
+    width:  91%;
+    margin: auto;
+
+    .countries{
+        display: grid;
+        width: 100%;
+        margin: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr ; 
+        grid-gap: 30px;
+    }
+}
+
+@include media(950px){
+    .main{
+        .countries{
+            
+            grid-template-columns: 1fr 1fr 1fr; 
+        }
+
+    }
+}
+@include media(750px){
+    .main{
+        .countries{
+            
+            grid-template-columns:  1fr 1fr; 
+        }
+
+    }
+}
+
+
+
+@include media(500px){
+    .main{
+        .countries{
+            grid-template-columns: 1fr ; 
+            width: 90%;
+        }  
+    }
+}
+
+// @import "./Input";
+// @import "./countryItem";
