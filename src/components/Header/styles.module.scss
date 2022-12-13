@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,600;0,800;1,400&display=swap');
+@import "../../styles/componentStyles/mixins";
+
+
+.light{
+    color: #111517;
+}
+
+.dark{
+    color: #ffffff;
+    background: #2B3844;
+}
+.header{
+    @include heights--margins(20px , none , auto , auto , 5% , 6% );
+    @include flex(flex, none , space-between , center , none);
+    @include shadow();
+    margin-bottom: 50px;
+    
+    h1{
+        font-size: 24px;
+        line-height: 20px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 800;
+    }
+
+    p{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        font-size: 16px;
+        font-weight: 300;
+        font-family: 'Nunito Sans', sans-serif;
+        cursor: pointer;
+        
+        .themeIcon{
+            transform: rotate(300deg);
+            margin-top: -2px;
+
+            ::after{
+            content: "";
+            padding: 2px 7px;
+            border-radius: 50%;
+            box-shadow: inset 3.5px 3px 3px ;
+           }
+             
+        }
+    }
+
+   
+}
+
+
+
+
+@include media(1024px){
+    .header{
+        @include heights--margins(90px , 100% , auto , auto , 5% , none );
+            h1{
+                font-weight: 800;
+                font-size: 24px;
+                line-height: 33px;
+              } 
+              p{
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+              }
+    }
+}
+
+
+@include media(800px){
+    .header{
+        @include heights--margins(80px , 100% , auto , auto , 2% , none );
+      h1{
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 33px;
+      } 
+      p{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+
+       
+      }
+    }
+
+}
+
+
+
+
+
+@include media(750px){
+    .header{
+        h1{
+            font-size: 16px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+}
+
+   
+
+
+
+
+
+
+
