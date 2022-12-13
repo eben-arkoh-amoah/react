@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
-import { Country } from "../../types/Country";
+import { Country } from "../../Types/countryData";
 import { FC } from "react";
-import { ThemeContext } from "../../context/themeContextProvider";
+import { ThemeContext } from "../../Context/themeContextProvider";
 import { useContext } from "react";
 import Styles from "./styles.module.css";
 

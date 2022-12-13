@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 import { createContext } from "react";
 import { useEffect, useState } from "react"; 
 import { api } from "../api";
-import { Country } from "../types/Country";
+import { Country } from "../Types/countryData";
 
 type childrenType = {
     children : React.ReactNode
