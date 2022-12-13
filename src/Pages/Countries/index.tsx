@@ -1,7 +1,7 @@
 import  { useContext, useEffect, useState } from "react";
-// import { InputArea } from "../../Components/Input";
+import { InputArea } from "../../Input";
 import { AllCountriesData } from "../../Context/countriesContextProvider";
-// import { CountryItem } from "../../Components/CountryItem";
+import { CountryItem } from "../../components/countryItem/countryItem";
 import { Country } from "../../Types/countryData";
 
 import "./styles.css";
