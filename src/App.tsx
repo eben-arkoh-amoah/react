@@ -4,7 +4,7 @@ import { Header } from './components/Header';
 import { CountriesContext } from "./Context/countriesContextProvider";
 import { ThemeProvider } from "./Context/themeContextProvider";
 import { ThemeContext } from "./Context/themeContextProvider";
-import Styles from "./styles/componentStyles/style.module.css";
+import Styles from "./App-styles-and-mixin/style.module.scss";
 
 
 
