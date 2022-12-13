@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,600;0,800;1,400&display=swap');
+@import "../../styles/componentStyles/mixins";
+.light{
+  color: #111517;
+}
+
+.dark{
+  color: white;
+}
+
+.SingleCountry{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  img{
+   width: 100%;
+   margin: auto; 
+  }
+
+  .countryData{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h1{
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 800;
+      font-size: 22px;
+       line-height: 30px;
+    }
+
+    .dataArea{
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      p{
+        margin: 5px 0px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 32px;
+        span{
+            font-weight: bold;
+        }
+
+        .language{
+             font-weight: 10;
+            margin: 5px;
+    }
+  }
+
+    .topLevel{
+      span{
+        font-weight: bold;
+      }
+    }
+  }
+
+  .borderArea{
+    display: flex;
+          width: 100%;
+          gap: 10px;
+          flex-direction: column;
+          p{
+              width: 200px;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 24px;
+          }
+
+          .borders{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 8px;
+            width: 100%;
+            align-items: center;
+            flex-direction: column;
+  
+            .singleBorder{
+                @include font-and-margins(300 , 12px , #000 , none , none, 7px);
+                @include flex(flex , none , center , center , none) ;
+                height: 35px;
+                max-width: 190px;
+                line-height: 16px;
+                box-shadow: 1px 1px 1em rgba($color: #000000, $alpha: 0.2);
+            }
+        }
+  }
+
+    }
+  }
+
+  @include QueryForDetailedPage(400px){
+    .SingleCountry{
+      .countryData{
+        .borderArea{
+          .borders{
+            grid-template-columns: 1fr 1fr 1fr;
+            .singleBorder{
+              max-width: 130px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include QueryForDetailedPage(500px){
+    .SingleCountry{
+      .countryData{
+        .dataArea{
+          flex-direction: row;
+          gap: 100px;
+        }
+        .borderArea{
+          flex-direction: row;
+          .borders{
+            grid-template-columns: 1fr 1fr 1fr;
+          }
+        }
+      }
+    }
+  }
+
+
+  @include QueryForDetailedPage(770px){
+    .SingleCountry{
+      img{
+        width: 700px;
+        height: 400px;
+      }
+      .countryData{
+        width: 700px;
+        margin: auto;
+        h1{
+          font-weight: 800;
+          font-size: 32px;
+          line-height: 30px;
+        }
+        .dataArea{
+          flex-direction: row;
+          gap: 200px;
+          padding-bottom: 0px;
+
+          p{
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 15px;
+            
+            span{
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 25px;
+            }
+          }
+        }
+        .borderArea{
+          p{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+          }
+          .borders{
+            .singleBorder{
+              font-weight: 300;
+              font-size: 12px;
+              line-height: 14px;
+            }
+          }
+        }
+      
+      }
+    }
+  }
+
+  @include QueryForDetailedPage(810px){
+    .SingleCountry{
+      flex-direction: row;
+      gap: 8%;
+      img{
+       width: 170%;
+       height: 400px;
+       margin-top: -0.001px;
+      }
+      .countryData{
+        width: 100%;
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 0px;
+        
+        .dataArea{
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .borderArea{
+          flex-direction: column;
+          gap: 0px;
+          .borders{
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+      }
+    }
+  }
+  @include QueryForDetailedPage(1000px){
+    .SingleCountry{
+      flex-direction: row;
+      gap: 8%;
+      img{
+       width: 100%;
+       height: auto;
+       margin-top: -0.001px;
+      }
+      .countryData{
+        width: 120%;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: -10px;
+
+        .dataArea{
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        .borderArea{
+          flex-direction: row;
+          .borders{
+            grid-template-columns: 1fr 1fr 1fr;
+            .singleBorder{
+              max-width: 120px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  
