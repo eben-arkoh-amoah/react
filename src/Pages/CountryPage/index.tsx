@@ -1,6 +1,7 @@
 import { useEffect, useState ,  useContext} from "react";
 import { useParams, Link} from "react-router-dom";
-import { Country } from "../../types/Country";
+// import { Country } from "../../types/Country";
+import {Country} from "../../types/Country"
 import { SingleCountry } from "../../Components/SingleCountry";
 import { AllCountriesData } from "../../context/countriesContextProvider";
 import { ThemeContext } from "../../context/themeContextProvider";

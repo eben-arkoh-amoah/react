@@ -1,9 +1,9 @@
 import React, {FC, useContext} from "react"; 
 import { Link } from "react-router-dom";
-import { Country } from "../../Types/countryData";
-import { AllCountriesData } from "../../Context/countriesContextProvider";
+import { Country } from "../../types/Country";
+import { AllCountriesData } from "../../context/countriesContextProvider";
 import Styles from "./styles.module.css";
-import { ThemeContext } from "../../Context/themeContextProvider";
+import { ThemeContext } from "../../context/themeContextProvider";
 
 export interface SingleCountryProps {
   country : Country

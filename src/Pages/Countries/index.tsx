@@ -1,14 +1,15 @@
 import  { useContext, useEffect, useState } from "react";
-import { InputArea } from "../../components/Input";
-import { AllCountriesData } from "../../Context/countriesContextProvider";
-import { CountryItem } from "../../components/countryItem/countryItem";
-import { Country } from "../../Types/countryData";
-
+import { InputArea } from "../../Components/Input";
+import { AllCountriesData } from "../../context/countriesContextProvider";
+import { CountryItem } from "../../Components/CountryItem";
+import { Country } from "../../types/Country";
 import "./styles.css";
+import { ThemeContext } from "../../context/themeContextProvider";
 
 
 export const Countries = () => {
   
+const {theme , setTheme} = useContext(ThemeContext);  
 const countries = useContext(AllCountriesData);
   const [filtredCountries, setFiltredCountries] = useState<Country[]>(countries);
   const [search, setSearch] = useState("");

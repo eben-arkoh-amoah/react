@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,600;0,800;1,400&display=swap");
+.light {
+  color: #111517;
+}
+
+.dark {
+  color: #ffffff;
+  background: #2B3844;
+}
+
+.header {
+  height: 20px;
+  width: none;
+  margin: auto auto;
+  padding: 5% 6%;
+  display: flex;
+  flex-direction: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+  box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.2);
+  margin-bottom: 50px;
+}
+.header h1 {
+  font-size: 24px;
+  line-height: 20px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+}
+.header p {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Nunito Sans", sans-serif;
+  cursor: pointer;
+}
+.header p .themeIcon {
+  transform: rotate(300deg);
+  margin-top: -2px;
+}
+.header p .themeIcon ::after {
+  content: "";
+  padding: 2px 7px;
+  border-radius: 50%;
+  box-shadow: inset 3.5px 3px 3px;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    height: 90px;
+    width: 100%;
+    margin: auto auto;
+    padding: 5% none;
+  }
+  .header h1 {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .header p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .header {
+    height: 80px;
+    width: 100%;
+    margin: auto auto;
+    padding: 2% none;
+  }
+  .header h1 {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .header p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .header h1 {
+    font-size: 16px;
+  }
+  .header p {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=styles.module.css.map */

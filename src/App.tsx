@@ -1,10 +1,10 @@
 import React, {useContext} from 'react';
-import { MainRoutes } from './Routes/routes';
-import { Header } from './components/Header';
-import { CountriesContext } from "./Context/countriesContextProvider";
-import { ThemeProvider } from "./Context/themeContextProvider";
-import { ThemeContext } from "./Context/themeContextProvider";
-import Styles from "./App-styles-and-mixin/style.module.scss";
+import { MainRoutes } from './Routes/MainRoutes';
+import { Header } from './Components/Header';
+import { CountriesContext } from './context/countriesContextProvider';
+import { ThemeProvider } from './context/themeContextProvider';
+import { ThemeContext } from './context/themeContextProvider';
+import Styles from "./styles/componentStyles/style.module.css";
 
 
 
@@ -14,7 +14,7 @@ function App() {
  <CountriesContext>
  <ThemeProvider>
   <Container>
-     <Header/>
+  <Header/>
     <MainRoutes/>
     </Container>      
    </ThemeProvider>

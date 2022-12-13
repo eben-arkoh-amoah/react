@@ -1,6 +1,7 @@
-import { InputTs } from "../../Types/input";
+import { InputTs } from "../../types/Input";
 import { useContext } from "react";
-import { ThemeContext } from "../../Context/themeContextProvider";
+import { ThemeContext } from "../../context/themeContextProvider";
+import { useState } from "react";
 import Styles from "./styles.module.css"
 
 export const InputArea = ({value, Search}: InputTs) => {
