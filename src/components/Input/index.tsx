@@ -14,13 +14,14 @@ const {theme , setTheme} = useContext(ThemeContext);
             placeholder="Search for a country..."
             value={value}
             onChange={e => Search(e.target.value)}/>
-            <select className={`box--shadow ${Styles[theme]}`}  onChange={e => Search(e.target.value)}>
-                <option value="Filter by region" defaultValue={"Filter by region"} disabled>Filter by region</option>
-                <option value="Africa">Africa</option>
-                <option value="Americas">Americas</option>
-                <option value="Asia">Asia</option>
-                <option value="Europe">Europe</option>
-                <option value="Oceania">Oceania</option>
+            <select className={`${Styles[theme]}`}  onChange={e => Search(e.target.value)}>
+                <option value="Filter by region" defaultValue={"Filter by region"} 
+                disabled className={Styles[theme]}>Filter by region</option>
+                <option value="Africa"  className={Styles[theme]}>Africa</option>
+                <option value="Americas"  className={Styles[theme]}>Americas</option>
+                <option value="Asia"  className={Styles[theme]}>Asia</option>
+                <option value="Europe"  className={Styles[theme]}>Europe</option>
+                <option value="Oceania"  className={Styles[theme]}>Oceania</option>
             </select>
             <div className={`${Styles.searchIcon} ${Styles[theme]}`}>
                 <div className={`${Styles.IconTail} ${Styles[theme]}`}></div>
