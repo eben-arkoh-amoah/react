@@ -24,7 +24,7 @@
         width: 17px;
         border-radius: 50%;
         position: absolute;
-        top: 240px ;
+        top: 190px ;
         left: 8%;
         border-bottom: none;
         transform: rotate(45deg);
@@ -54,11 +54,17 @@
   
 }
 
-
-@include media(1024px){
+@include media(1200px){
     .InputArea{
         .searchIcon{
-            top: 150px;
+            top: 160px;
+        }
+    }
+}
+@include media(1034px){
+    .InputArea{
+        .searchIcon{
+            top: 152px;
             left: 9%;
         }
         input{

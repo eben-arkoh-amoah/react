@@ -5,4 +5,21 @@
   border: none;
   outline: none;
   list-style: none;
+}
+
+.light {
+  color: rgb(236, 234, 234);
+}
+
+.dark {
+  background: #202C36;
+  color: rgb(236, 234, 234);
+}
+
+.box--shadow {
+  box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  height: 100vh;
 }/*# sourceMappingURL=style.module.css.map */

@@ -7,12 +7,13 @@
 
 .dark{
     color: #ffffff;
-    background:  #2a313a;
-    box-shadow: 0px 0px 7px  rgba(10, 10, 10, 0.2);  
+    background:  #202C36;
+    box-shadow: 0px 0px 7px  rgb(36, 35, 35);  
 }
 
     .CountryPage{
         @include heights--margins(100vh , 100% , auto , auto , none , 0px ) ;
+        box-shadow: none;
         .back {
             @include heights--margins(40px , 120px , 30px , 4% , none, none);
             @include flex(flex , none , center , center, none);
@@ -46,17 +47,7 @@
    
 
     
-// @include media(500px){
-//     .CountryPage{
-//         // @include heights--margins(100vh , 100% , auto , auto , 0px , 0px ) ;
-   
-//     //     #back--button{
-//     //         @include heights--margins(20px ,57px , 20px , 3px , none , none);
-//     //     }
-//     // }
 
-   
-//     }
 
     
 

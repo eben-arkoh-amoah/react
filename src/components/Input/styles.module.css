@@ -27,7 +27,7 @@
   width: 17px;
   border-radius: 50%;
   position: absolute;
-  top: 240px;
+  top: 190px;
   left: 8%;
   border-bottom: none;
   transform: rotate(45deg);
@@ -54,9 +54,14 @@
   border: none;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .InputArea .searchIcon {
-    top: 150px;
+    top: 160px;
+  }
+}
+@media screen and (max-width: 1034px) {
+  .InputArea .searchIcon {
+    top: 152px;
     left: 9%;
   }
   .InputArea input {
