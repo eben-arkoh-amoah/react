@@ -5,12 +5,15 @@
 
 .dark {
   color: white;
+  background: #2a313a;
 }
 
 .SingleCountry {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
+  padding: 0px 4%;
 }
 .SingleCountry img {
   width: 100%;

@@ -27,8 +27,8 @@
   width: 17px;
   border-radius: 50%;
   position: absolute;
-  top: 220px;
-  left: 65px;
+  top: 240px;
+  left: 8%;
   border-bottom: none;
   transform: rotate(45deg);
 }
@@ -38,9 +38,9 @@
 }
 .InputArea input {
   height: 50px;
-  width: 450px;
+  width: 45%;
   margin: none none;
-  padding: 0px 80px;
+  padding: 0px 10%;
   box-shadow: 2px 2px 1em rgba(0, 0, 0, 0.2);
   border: none;
   border-radius: 2px;
@@ -55,11 +55,15 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .InputArea .searchIcon {
+    top: 150px;
+    left: 9%;
+  }
   .InputArea input {
     height: 48px;
     width: 45%;
     margin: start auto;
-    padding: 0px 2%;
+    padding: 0px 12%;
   }
 }
 @media screen and (max-width: 800px) {
@@ -67,16 +71,33 @@
     flex-direction: column;
     gap: 30px;
   }
+  .InputArea .searchIcon {
+    top: 133px;
+    left: 8%;
+  }
   .InputArea input {
     height: 48px;
     width: 55%;
     margin: start auto;
-    padding: 0px 3%;
+    padding: 0px 12%;
   }
   .InputArea select {
     height: 48px;
     width: 28%;
     margin: auto start;
     padding: 0px 3%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .InputArea .searchIcon {
+    top: 133px;
+    left: 8%;
+  }
+  .InputArea input {
+    width: 100%;
+    padding-left: 50px;
+  }
+  .InputArea select {
+    width: 50%;
   }
 }/*# sourceMappingURL=styles.module.css.map */

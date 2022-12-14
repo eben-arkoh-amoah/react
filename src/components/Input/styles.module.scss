@@ -24,8 +24,8 @@
         width: 17px;
         border-radius: 50%;
         position: absolute;
-        top: 220px ;
-        left: 65px;
+        top: 240px ;
+        left: 8%;
         border-bottom: none;
         transform: rotate(45deg);
         .IconTail{
@@ -36,10 +36,10 @@
 
 
     input{
-        @include heights--margins(50px , 450px , none , none , 0px , 80px) ;
+        @include heights--margins(50px , 45% , none , none , 0px , 10%) ;
         @include shadow();
         border: none;
-        border-radius: 2px;
+        border-radius: 2px; 
         font-size: 14px; 
     }
 
@@ -57,8 +57,12 @@
 
 @include media(1024px){
     .InputArea{
+        .searchIcon{
+            top: 150px;
+            left: 9%;
+        }
         input{
-            @include heights--margins(48px , 45% , start , auto , 0px , 2% );
+            @include heights--margins(48px , 45% , start , auto , 0px , 12% );
     }
 }
 }
@@ -68,8 +72,12 @@
     .InputArea{
         flex-direction: column;
         gap: 30px;
+        .searchIcon{
+            top: 133px;
+            left: 8%;
+        }
         input{
-            @include heights--margins(48px , 55% , start , auto , 0px , 3% );
+            @include heights--margins(48px , 55% , start , auto , 0px , 12% );
     }
 
     select{
@@ -80,3 +88,18 @@
 }
 
 
+@include media(500px){
+    .InputArea{
+.searchIcon{
+    top: 133px;
+    left: 8%;
+}
+        input{
+            width: 100%;
+            padding-left: 50px;
+        }
+        select{
+            width: 50%;
+        }
+    }
+}

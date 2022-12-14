@@ -1,8 +1,16 @@
 @import "../../styles/componentStyles/mixins";
+.light{
+    color: #2B3844;
+}
 
+.dark{
+    color: rgb(253, 252, 252);
+    background:  #2d353d;
+}
 .main{
     min-height: calc(100vh - 90px) ;
-    width:  91%;
+    width:  100%;
+    padding: 0% 5%;
     margin: auto;
 
     .countries{

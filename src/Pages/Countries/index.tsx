@@ -3,7 +3,7 @@ import { InputArea } from "../../Components/Input";
 import { AllCountriesData } from "../../context/countriesContextProvider";
 import { CountryItem } from "../../Components/CountryItem";
 import { Country } from "../../types/Country";
-import "./styles.css";
+import Styles from "./styles.module.css";
 import { ThemeContext } from "../../context/themeContextProvider";
 
 
@@ -26,12 +26,12 @@ const countries = useContext(AllCountriesData);
   const lowerSearch = search.toLocaleLowerCase()
 
     return(
-        <main className="main">
+        <main className={`${Styles.main} ${Styles[theme]}`}>
         <InputArea
         value={search}
         Search = {setSearch}
         />
-        <div className="countries">
+        <div className={Styles.countries}>
 
         { countries ?  ( filtredCountries.map((country,index)=> (
                   <CountryItem  country={country}  key={index}  />

@@ -24,7 +24,7 @@ useEffect(
     },[code,countries]);
 
     return(
-        <div className= {`${Styles.CountryPage} `}>
+        <div className= {`${Styles.CountryPage} ${Styles[theme]}`}>
            <Link to="/"  className={`${Styles.back} ${Styles[theme]}`}> 
            <span className={`${Styles.arrowHead} ${Styles[theme]}`}>{`<`}</span>
            <span className={`${Styles.arrowTail} ${Styles[theme]}`}></span>
